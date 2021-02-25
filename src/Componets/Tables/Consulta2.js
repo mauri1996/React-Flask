@@ -13,7 +13,7 @@ export const Tabla2 = ({año,table=[]})=>{
     //console.log('-----')
 
     if(table[año]){
-
+      
         return (
             <React.Fragment>
           <Title>Año : {año}</Title>
