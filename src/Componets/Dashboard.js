@@ -14,8 +14,9 @@ import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
-import {Page1} from '../Componets/Pages/Page-Consulta1'
-
+import {Page1} from './Pages/Page'
+import {Home} from '../Componets/Pages/Home'
+import {Route} from 'wouter'
 
 
 const drawerWidth = 240;
@@ -105,14 +106,13 @@ export default function Dashboard() {
   const classes = useStyles();
   const [open, setOpen] = React.useState(true);
 
-  //const [draw,setDraw] = React.useState();
-
   const handleDrawerOpen = () => {
     setOpen(true);
   };
   const handleDrawerClose = () => {
     setOpen(false);
   };
+
   
   return (
     <div className={classes.root}>
@@ -129,7 +129,7 @@ export default function Dashboard() {
             <MenuIcon />
           </IconButton>
           <Typography component="h1" variant="h6" color="inherit" noWrap className={classes.title}>
-            Dashboard
+            Proyecto de Big Data
           </Typography>
           <IconButton color="inherit">
             <Badge badgeContent={4} color="secondary">
@@ -157,7 +157,10 @@ export default function Dashboard() {
       </Drawer>
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />
-        <Page1/>
+
+        <Route path="/:tipo" component={Page1}/>
+        <Route path="/" component={Home}/>
+        
       </main>
     </div>
   );

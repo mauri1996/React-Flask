@@ -6,41 +6,42 @@ import ListSubheader from '@material-ui/core/ListSubheader';
 import DashboardIcon from '@material-ui/icons/Dashboard';
 import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
+import {Link} from 'wouter'
 
 export const mainListItems = (
   <div>
-    <ListItem button>
+    <ListItem button component={Link} to='/'>
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
-      <ListItemText primary="Dashboard" />
+      <ListItemText primary="Home" />
     </ListItem>
-    <ListItem button>
+    <ListItem button component={Link} to='/consulta1'>
       <ListItemIcon>
         <LayersIcon />
       </ListItemIcon>
       <ListItemText primary="Consulta 1" />
     </ListItem>
-    <ListItem button>
+    <ListItem button component={Link} to='/consulta2'>
       <ListItemIcon>
         <LayersIcon />
       </ListItemIcon>
       <ListItemText primary="Consulta 2" />
     </ListItem>
-    <ListItem button>
+    <ListItem button component={Link} to='/consulta3'>
       <ListItemIcon>
         <LayersIcon />
       </ListItemIcon>
       <ListItemText primary="Consulta 3" />
     </ListItem>
-    <ListItem button>
-      <ListItemIcon>
+    <ListItem button component={Link} to='/consulta4'>
+      <ListItemIcon >
         <LayersIcon />
       </ListItemIcon>
       <ListItemText primary="Consulta 4" />
     </ListItem>
-    <ListItem button>
-      <ListItemIcon>
+    <ListItem button component={Link} to='/consulta5'>
+      <ListItemIcon >
         <LayersIcon />
       </ListItemIcon>
       <ListItemText primary="Consulta 5" />

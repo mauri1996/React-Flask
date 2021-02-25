@@ -7,7 +7,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Title from '../Title';
 
 
-export const Tabla2 = ({año,table=[]})=>{
+export const Tabla4 = ({año,table=[]})=>{
     //console.log('-----')
     //console.log(table[año])
     //console.log('-----')
@@ -20,6 +20,7 @@ export const Tabla2 = ({año,table=[]})=>{
           <Table size="small">
             <TableHead>
               <TableRow>
+                <TableCell>Mes</TableCell>
                 <TableCell>Aerolina</TableCell>
                 <TableCell>Retrasos</TableCell>
                 
@@ -28,8 +29,9 @@ export const Tabla2 = ({año,table=[]})=>{
             <TableBody>
               {table[año].map((row,index) => (
                 <TableRow key={index}>
+                  <TableCell>{row.mes}</TableCell>
                   <TableCell>{row.aerolinea}</TableCell>
-                  <TableCell>{row.retraso}</TableCell>
+                  <TableCell>{row.retrasos}</TableCell>
                   
                 </TableRow>
               ))}

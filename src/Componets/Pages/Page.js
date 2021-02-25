@@ -88,29 +88,29 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-export const Page1 = () =>{
+export const Page1 = ({params}) =>{
+
+    const {tipo} = params
+
+    console.log({tipo})
     const classes = useStyles();
+    const anios = [ 1996,1997 ,1998,1999,2000, 2001, 2002]
     
     return(        
         <Container maxWidth="lg" className={classes.container}>
-          <Grid container spacing={3}>                
-            {/* Recent Orders */}
-            <Grid item xs={6}>
-              <Paper className={classes.paper}>
-                <FoundYears 
-                        año={1999} 
-                        consulta= 'consulta1'
-                />                
-              </Paper>                           
-            </Grid>
-            <Grid item xs={6}>
-              <Paper className={classes.paper}>
-                <FoundYears 
-                        año={2000} 
-                        consulta= 'consulta1'
-                />                
-              </Paper>                           
-            </Grid>
+            <Grid container spacing={3}> 
+            {
+                anios.map((anio,index) => 
+                    <Grid item xs={6} key={index} >
+                      <Paper className={classes.paper}  >
+                          <FoundYears 
+                                  año={anio} 
+                                  consulta= {tipo}
+                          />                
+                      </Paper>                           
+                    </Grid>                    
+                )
+            }
           </Grid>
         </Container>
         
