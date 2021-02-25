@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import FoundYears from '../FoundYears';
 import { makeStyles } from '@material-ui/core/styles';
+import Image from '../../img/back_3.jpg'
 
 
 const drawerWidth = 240;
@@ -74,7 +75,8 @@ const useStyles = makeStyles((theme) => ({
     container: {           
       paddingTop: theme.spacing(4),
       paddingBottom: theme.spacing(4),
-      display: 'flex'        
+      display: 'flex',
+      backgroundImage: `url(${Image})`          
     },
     paper: {
       padding: theme.spacing(2),
@@ -97,7 +99,7 @@ export const Page1 = ({params}) =>{
     const anios = [ 1996,1997 ,1998,1999,2000, 2001, 2002]
     
     return(        
-        <Container maxWidth="lg" className={classes.container}>
+        <Container maxWidth="lg" className={classes.container} >
             <Grid container spacing={3}> 
             {
                 anios.map((anio,index) => 

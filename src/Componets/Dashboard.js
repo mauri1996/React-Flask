@@ -17,6 +17,7 @@ import { mainListItems, secondaryListItems } from './listItems';
 import {Page1} from './Pages/Page'
 import {Home} from '../Componets/Pages/Home'
 import {Route} from 'wouter'
+//import Image from '../img/back_3.jpg'
 
 
 const drawerWidth = 240;
@@ -88,7 +89,8 @@ const useStyles = makeStyles((theme) => ({
   container: {           
     paddingTop: theme.spacing(4),
     paddingBottom: theme.spacing(4),
-    display: 'flex'        
+    display: 'flex',
+    //backgroundImage: `url(${Image})`        
   },
   paper: {
     padding: theme.spacing(2),
