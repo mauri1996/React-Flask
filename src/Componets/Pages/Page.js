@@ -94,12 +94,13 @@ export const Page1 = ({params}) =>{
 
     const {tipo} = params
 
-    console.log({tipo})
+    ////console.log({tipo})
     const classes = useStyles();
-    const anios = [ 1996,1997 ,1998,1999,2000, 2001, 2002]
+    const anios = [1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997 ,1998,1999,2000, 2001, 2002]
     
     return(        
         <Container maxWidth="lg" className={classes.container} >
+          
             <Grid container spacing={3}> 
             {
                 anios.map((anio,index) => 

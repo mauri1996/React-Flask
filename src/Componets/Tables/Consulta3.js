@@ -7,7 +7,7 @@ import TableRow from '@material-ui/core/TableRow';
 import Title from '../Title';
 
 
-export const Tabla2 = ({año,table=[]})=>{
+export const Tabla3 = ({año,table=[]})=>{
     //console.log('-----')
     //console.log(table[año])
     //console.log('-----')
