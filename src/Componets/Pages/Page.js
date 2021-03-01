@@ -83,7 +83,7 @@ const useStyles = makeStyles((theme) => ({
       display: 'flex',
       overflow: 'auto',
       flexDirection: 'column',
-      //height: '500px',
+      'max-height': '420px',
     },
     fixedHeight: {
       height: 240,
@@ -96,7 +96,7 @@ export const Page1 = ({params}) =>{
 
     ////console.log({tipo})
     const classes = useStyles();
-    const anios = [1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997 ,1998,1999,2000, 2001, 2002]
+    const anios = [1987,1988,1989,1990,1991,1992,1993,1994,1995,1996,1997 ,1998,1999,2000, 2001, 2002  ]
     
     return(        
         <Container maxWidth="lg" className={classes.container} >

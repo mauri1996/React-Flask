@@ -13,7 +13,7 @@ import Badge from '@material-ui/core/Badge';
 import MenuIcon from '@material-ui/icons/Menu';
 import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import { mainListItems, secondaryListItems } from './listItems';
+import { mainListItems } from './listItems';
 import {Page1} from './Pages/Page'
 import {Home} from '../Componets/Pages/Home'
 import {Route} from 'wouter'
@@ -155,7 +155,10 @@ export default function Dashboard() {
         <Divider />
         <List>{mainListItems}</List>
         <Divider />
-        <List>{secondaryListItems}</List>
+        {
+          //<List>{secondaryListItems}</List>
+        }
+        
       </Drawer>
       <main className={classes.content}>
         <div className={classes.appBarSpacer} />

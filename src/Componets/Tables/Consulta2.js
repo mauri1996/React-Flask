@@ -13,8 +13,8 @@ export const Tabla2 = ({año,table=[]})=>{
     //console.log('-----')
 
     if(table[año]){
-        console.log(table)
-        //console.log(typeof(table[año]))
+        //console.log(table)
+        //console.log(año, table[año].length)
         return (
             <React.Fragment>
           <Title>Año : {año}</Title>
@@ -30,10 +30,10 @@ export const Tabla2 = ({año,table=[]})=>{
               {table[año].map((row,index) => (
                 <TableRow key={index}>
                   <TableCell>{row.aerolinea}</TableCell>
-                  <TableCell>{row.retraso}</TableCell>
-                  
-                </TableRow>
+                  <TableCell>{row.retraso}</TableCell>                  
+                </TableRow>                
               ))}
+              
             </TableBody>
           </Table>
         </React.Fragment>
