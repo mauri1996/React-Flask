@@ -15,7 +15,7 @@ export const Home = () =>{
     return(
         <div style={styles.paperContainer}>
             <div className="App">
-                <img src={Logo} height="380">
+                <img src={Logo} alt='logo' height="380">
                 </img>
                 <h2>Facultad de Ingeniería - Escuela de Sistemas</h2>
                 <h2>Optativa 9 - Big Data</h2>
