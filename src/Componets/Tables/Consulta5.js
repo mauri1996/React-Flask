@@ -16,14 +16,14 @@ export const Tabla5 = ({año,table=[]})=>{
 
         return (
             <React.Fragment>
-          <Title>Año : {año}</Title>
+          <Title>Año: {año}</Title>
           <Table size="small">
             <TableHead>
               <TableRow>
-                <TableCell>Origen</TableCell>
-                <TableCell>Destino</TableCell>
-                <TableCell>Aerolina</TableCell>
-                <TableCell>Vuelos</TableCell>
+                <TableCell> <b>Origen</b> </TableCell>
+                <TableCell><b>Destino</b></TableCell>
+                <TableCell><b>Aerolínea</b></TableCell>
+                <TableCell><b>Vuelos</b></TableCell>
                 
               </TableRow>
             </TableHead>

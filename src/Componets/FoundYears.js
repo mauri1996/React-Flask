@@ -2,6 +2,7 @@ import React ,{useEffect,useState} from 'react';
 import {GetAnio} from '../service/GetAnios'
 import {Tabla1} from '../Componets/Tables/Consulta1'
 import {Tabla2} from '../Componets/Tables/Consulta2'
+import {Tabla3} from '../Componets/Tables/Consulta3'
 import {Tabla4} from '../Componets/Tables/Consulta4'
 import {Tabla5} from '../Componets/Tables/Consulta5'
 
@@ -31,6 +32,15 @@ export default function FoundYears({año,consulta}) {
       return (
         <div>
           <Tabla2 
+              año={año}
+              table={table}         
+          />
+        </div>        
+      );
+    case 'consulta3':
+      return (
+        <div>
+          <Tabla3 
               año={año}
               table={table}         
           />

@@ -16,13 +16,12 @@ export const Tabla3 = ({año,table=[]})=>{
 
         return (
             <React.Fragment>
-          <Title>Año : {año}</Title>
+          <Title>Año: {año}</Title>
           <Table size="small">
             <TableHead>
               <TableRow>
-                <TableCell>Aerolina</TableCell>
-                <TableCell>Retrasos</TableCell>
-                
+                <TableCell><b>Aerolínea</b></TableCell>
+                <TableCell><b>Restrasos</b></TableCell>                
               </TableRow>
             </TableHead>
             <TableBody>

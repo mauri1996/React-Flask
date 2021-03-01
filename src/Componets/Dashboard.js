@@ -20,6 +20,7 @@ import {Route} from 'wouter'
 //import Image from '../img/back_3.jpg'
 
 
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -160,9 +161,8 @@ export default function Dashboard() {
         }
         
       </Drawer>
-      <main className={classes.content}>
-        <div className={classes.appBarSpacer} />
-
+      <main className={classes.content} >
+        <div className={classes.appBarSpacer} />      
         <Route path="/:tipo" component={Page1}/>
         <Route path="/" component={Home}/>
         
